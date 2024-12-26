@@ -8,17 +8,30 @@
 </head>
 <body>
     <header>
-        <h1>Pokemon</h1>
+        <h1>Pokedex</h1>
     </header>
     <section class="contenedor">
         <form name="buscador">
             <input type="text" name="identificador" required>
             <button>Agregar</button>
         </form>
-        <ul id="resultado"></ul>
+        <div id="pokedex">
+            <section id="dispositivo">
+                <div class="pantalla">
+                </div>
+                <div class="numero"></div>
+            </section>
+            <section id="tapa">
+                <div class="data"></div>
+            </section>
+        </div>
+        <div>
+
+        </div>
         <ul id="elegidos"></ul>
     </section>
 
 </body>
-<script type="module" src="app.js"></script>
+<!-- <script type="module" src="app.js"></script> -->
+ <script src="./scripts/app.js"></script>
 </html>

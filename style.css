@@ -1,9 +1,12 @@
 *{
-    margin: 0;
-    box-sizing: border-box;
+    list-style: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
+    background-image: url(./imgs/pokemon-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -15,55 +18,68 @@ header{
     color: white;
     flex: 0 0 50px;
 }
-.contenedor{
-    flex: 1;
-
-    background: #eee;
-    border-radius: 12px;
-    margin: 15px;
-    padding: 12px;
+#pokedex{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    background-image: url(./imgs/pokedex.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 660px;
+    height: 500px;
+    margin: auto;
+}
+#dispositivo, #tapa{
+    height: 100%;
+    width: 50%;
+}
+.pantalla{
+    background-color: white;
+    height: 132px;
+    width: 200px;
+    position: relative;
+    top: 165px;
+    left: 80px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
-.contenedor>form{
-    flex: 0 0 50px;
-    background: rgb(255, 204, 0);
-    padding: 25px;
-    border-radius: 75%;
-}
-.contenedor>ul{
-    flex: 1;
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    border: 1px solid gray;
-    border-radius: 3px;
-    margin: 1px;
-}
-
-.card{
-    flex: 0 0 180px;
-    background: white;
-    padding: 8px;
-    border: 1px solid gray;
-    border-radius: 8px;
-    margin: 3px;
-}
-
-.card>img{
+.numero{
+    background-color: #60C281;
+    position: relative;
+    top: 264px;
+    left: 100px;
+    height: 46px;
     width: 100px;
-    height: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-table{
-    background-color: rgb(171, 244, 247);
-    height: auto;
-    width: 100%;
-    text-decoration: underline mediumseagreen;
+.data{
+    background-color: #084035;
+    width: 200px;
+    height: 80px;
+    position: relative;
+    top: 171px;
+    left: 66px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: aliceblue;
 }
-
+.imagen{
+    height: 140px;
+    object-fit: cover;
+}
+.listado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.listado>tr{
+    margin: 2px 3px;
+}
